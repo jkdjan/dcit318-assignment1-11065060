@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class TriangleTypeIdentifier
 {
     static void Main()
     {
@@ -14,16 +14,10 @@ class Program
         int side3 = int.Parse(Console.ReadLine());
 
         if (side1 == side2 && side2 == side3)
-        {
             Console.WriteLine("Triangle Type: Equilateral");
-        }
         else if (side1 == side2 || side1 == side3 || side2 == side3)
-        {
             Console.WriteLine("Triangle Type: Isosceles");
-        }
         else
-        {
             Console.WriteLine("Triangle Type: Scalene");
-        }
     }
 }
